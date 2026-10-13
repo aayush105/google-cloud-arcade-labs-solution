@@ -194,10 +194,14 @@ Download the archive from Cloud Storage:
 gsutil cp gs://cloud-samples-tests/natural-language/sentiment-samples.tgz .
 ```
 
-Extract the `.tgz` archive with:
+Extract the `.tgz` archive using the following commands:
 
 ```bash
-tar -xzvf sentiment-samples.tgz
+gunzip sentiment-samples.tgz
+```
+
+```bash
+tar -xvf sentiment-samples.tar
 ```
 
 Find the positive Blade Runner review file:
